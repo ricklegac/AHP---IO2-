@@ -5,7 +5,7 @@ a=[];
 for i in range(n):
     row =[]
     for j in range(n):
-    	row.append(int(input('A[' + str(i) + ',' + str(j) +']: ')))
+    	row.append(float(input('A[' + str(i) + ',' + str(j) +']: ')))
     a.append(row)
 
 print()
@@ -15,6 +15,6 @@ for i in range(n):
         print(a[i][j], end = " ")
     print()
 
-matrix = np.array([[1,2],[3,4]])
+matrix = np.array(a)
 norms = np.linalg.norm(matrix, axis=1)
 print(matrix/norms)
