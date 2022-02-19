@@ -1,7 +1,7 @@
 import numpy as np
 print('ingrese dimension de la matriz:')
 n= int(input())
-
+a=[];
 for i in range(n):
     row =[]
     for j in range(n):
